@@ -13,12 +13,14 @@ adicionarPaciente.addEventListener('click', function (event) {
         exibeMensagemDeErros(erros);
         return;
     }
-    
+    /*
     if (!validaPaciente(paciente)) {
         console.log("Paciente Inválido.")
         return;
     }
-    
+    */
+   adicionaNovoPaciente(paciente);
+
     form.reset();
     document.querySelector("#mensagens-erro").innerHTML = "";
 });
